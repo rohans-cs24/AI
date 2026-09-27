@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Solving — Presentation Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">🧩 Maze Solving</div>
+      <div class="counter" id="counter">Slide 1 / 23</div>
+    </header>
+
+    <section class="progress-wrap">
+      <div class="progress"><div id="progressBar"></div></div>
+    </section>
+
+    <section class="card-stage" id="cardStage">
+      <article class="card" id="card">
+        <div class="section-label" id="sectionLabel"></div>
+        <div class="slide-number" id="slideNumber"></div>
+        <h1 id="heading"></h1>
+        <div class="content" id="content"></div>
+      </article>
+    </section>
+
+    <nav class="controls">
+      <button id="prevBtn" class="nav-btn secondary" aria-label="Previous slide">← Previous</button>
+      <button id="nextBtn" class="nav-btn primary" aria-label="Next slide">Next →</button>
+    </nav>
+
+    <p class="hint">Tap the card or press <kbd>Space</kbd> / <kbd>→</kbd> to continue · <kbd>←</kbd> to go back</p>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
