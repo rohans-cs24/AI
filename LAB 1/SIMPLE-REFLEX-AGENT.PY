@@ -7,13 +7,13 @@ visited = 0;
 rooms_count = len(just_rooms)
 cur = just_rooms.index(room)
 
-while visited < rooms_count:
+while True:
     visited += 1
     if rooms[(just_rooms[cur])] == 0:
         rooms[(just_rooms[cur])] = 1
         print("Cleaning" , just_rooms[cur])
     cur = (cur+1)  % rooms_count
-    if visited == rooms_count:
+    if visited == rooms_count * 4:
         break
     print("Moving to ", just_rooms[cur] )
 print("All rooms cleaned")
